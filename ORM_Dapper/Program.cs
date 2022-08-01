@@ -32,5 +32,5 @@ var prod = new DapperProductRepository(conn);
 var products = prod.GetAllProducts();
 foreach (var product in products)
 {
-    Console.WriteLine($"{product.Name} --Price: {product.Price}");
+    Console.WriteLine($"{product.ProductID} {product.Name} --Price: {product.Price}");
 }
